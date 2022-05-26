@@ -16,7 +16,7 @@
 		<PackageTags>Blazor state</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReleaseNotes>Ready to use</PackageReleaseNotes>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<AssemblyName>Imato.Blazor.State</AssemblyName>
 		<PackageIcon>icon.png</PackageIcon>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>

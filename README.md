@@ -72,7 +72,7 @@ public class WeatherForecastState : State<List<WeatherForecast>>
 }
 ```
 
-For one state per component use StateComponent<T>
+For one state per component use generic StateComponent<T>
 ```csharp
 @inherits StateComponent<List<WeatherForecast>>
 

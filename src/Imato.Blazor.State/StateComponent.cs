@@ -19,6 +19,11 @@ namespace Imato.Blazor.State
             }
         }
 
+        public void StateChnged()
+        {
+            _state?.StateChanged();
+        }
+
         protected override async Task OnInitializedAsync()
         {
             _state = await GetStateOf<T>();
@@ -41,6 +46,11 @@ namespace Imato.Blazor.State
                 if (_state == null) throw new NotInitializedException(typeof(T));
                 _state.Value = value;
             }
+        }
+
+        public void StateChnged()
+        {
+            _state?.StateChanged();
         }
 
         protected override async Task OnInitializedAsync()
