@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackageId>Imato.Blazor.State</PackageId>
+		<Title>Imato.Blazor.State</Title>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>Alexey Varentsov (@imato)</Authors>
+		<Company>Imato</Company>
+		<PackageProjectUrl>https://github.com/Imato/Imato.Blazor.State</PackageProjectUrl>
+		<Description>Simple Blazor state container</Description>
+		<Summary></Summary>
+		<RepositoryUrl>https://github.com/Imato/Imato.Blazor.State</RepositoryUrl>
+		<PackageTags>Blazor state</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReleaseNotes>Ready to use</PackageReleaseNotes>
+		<Version>1.0.0</Version>
+		<AssemblyName>Imato.Blazor.State</AssemblyName>
+		<PackageIcon>icon.png</PackageIcon>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<DebugType>portable</DebugType>
+		<Copyright>Alexey Varentsov</Copyright>
+		<RequireLicenseAcceptance>false</RequireLicenseAcceptance>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.4" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F972C4EE-F165-4703-9E41-C8F4DCD8CE34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorTestApp", "tests\BlazorTestApp\BlazorTestApp.csproj", "{7570B079-A826-4AD0-A96C-CB639CE887C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{08F8CE9D-B908-4A39-92A4-BD9CAC617D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imato.Blazor.State", "src\Imato.Blazor.State\Imato.Blazor.State.csproj", "{32EE54EA-5471-48C8-9485-126B4D8AB9AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2FE0702B-CCE8-4A5F-933A-4A6FE23928F1}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7570B079-A826-4AD0-A96C-CB639CE887C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7570B079-A826-4AD0-A96C-CB639CE887C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7570B079-A826-4AD0-A96C-CB639CE887C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7570B079-A826-4AD0-A96C-CB639CE887C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32EE54EA-5471-48C8-9485-126B4D8AB9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32EE54EA-5471-48C8-9485-126B4D8AB9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32EE54EA-5471-48C8-9485-126B4D8AB9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32EE54EA-5471-48C8-9485-126B4D8AB9AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7570B079-A826-4AD0-A96C-CB639CE887C4} = {F972C4EE-F165-4703-9E41-C8F4DCD8CE34}
+		{32EE54EA-5471-48C8-9485-126B4D8AB9AB} = {08F8CE9D-B908-4A39-92A4-BD9CAC617D20}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3935A71-5158-4C60-90BC-146F928D6D20}
+	EndGlobalSection
+EndGlobal
