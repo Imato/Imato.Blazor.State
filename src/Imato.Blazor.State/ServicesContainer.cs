@@ -47,21 +47,25 @@ namespace Imato.Blazor.State
             throw new TypeAccessException($"Not registered in DI state of {typeof(T).Name}");
         }
 
-        public static IServiceCollection AddStates<TApp>(this IServiceCollection services)
+        public static WebAssemblyHostBuilder? AddStates<TApp>(this WebAssemblyHostBuilder? builder)
         {
-            var assembly = typeof(TApp).Assembly;
-            foreach (var t in assembly.GetTypes()
-                .Where(x => !x.IsAbstract && !x.IsInterface && x.Name.Contains("State")))
+            if (builder != null)
             {
-                foreach (var i in t.GetInterfaces())
+                var assembly = typeof(TApp).Assembly;
+                foreach (var t in assembly.GetTypes()
+                    .Where(x => !x.IsAbstract && !x.IsInterface && x.Name.Contains("State")))
                 {
-                    if (i.IsGenericType && i.Name == "IState`1")
+                    foreach (var i in t.GetInterfaces())
                     {
-                        services.AddSingleton(i, t);
+                        if (i.IsGenericType && i.Name == "IState`1")
+                        {
+                            builder.Services.AddSingleton(i, t);
+                            builder.Services.AddSingleton(t);
+                        }
                     }
                 }
             }
-            return services;
+            return builder;
         }
 
         public static void Register(WebAssemblyHost? app)

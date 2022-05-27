@@ -4,11 +4,11 @@
     {
         protected T? state;
 
-        public T Value
+        public T? Value
         {
             get
             {
-                return state ?? throw new NotInitializedException();
+                return state;
             }
             set
             {

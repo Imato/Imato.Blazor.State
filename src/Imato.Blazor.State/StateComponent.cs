@@ -15,11 +15,12 @@ namespace Imato.Blazor.State
             set
             {
                 if (_state == null) throw new NotInitializedException(typeof(T));
+                if (value == null) throw new ArgumentNullException("Value of state cannot be null");
                 _state.Value = value;
             }
         }
 
-        public void StateChnged()
+        public void StateChanged()
         {
             _state?.StateChanged();
         }
@@ -44,11 +45,12 @@ namespace Imato.Blazor.State
             set
             {
                 if (_state == null) throw new NotInitializedException(typeof(T));
+                if (value == null) throw new ArgumentNullException("Value of state cannot be null");
                 _state.Value = value;
             }
         }
 
-        public void StateChnged()
+        public void StateChanged()
         {
             _state?.StateChanged();
         }

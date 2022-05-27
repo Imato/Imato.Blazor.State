@@ -2,7 +2,7 @@
 {
     public interface IState<T>
     {
-        T Value { get; set; }
+        T? Value { get; set; }
         bool Initialized { get; }
 
         void StateChanged();

@@ -6,7 +6,7 @@ Usage
 ```csharp
 using Imato.Blazor.State;
 
-builder.Services.AddStates<App>();
+builder.AddStates<App>();
 
 var app = builder.Build();
 ServicesContainer.Register(app);

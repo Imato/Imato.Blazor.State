@@ -8,7 +8,7 @@ builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-builder.Services.AddStates<App>();
+builder.AddStates<App>();
 var app = builder.Build();
 ServicesContainer.Register(app);
 await app.RunAsync();
